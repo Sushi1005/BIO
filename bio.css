@@ -1,0 +1,188 @@
+body {
+    background-image: url(background.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+nav {   
+    min-height: 50px;
+    background-color:#F7567C;
+    padding: 0 20%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-style:dotted;
+}
+
+
+nav > a {
+    color: #FFFAE3;
+}
+
+main {
+    max-width: 1148px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: auto; 
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+    "main-title main-title main-title main-title"
+    "about about about about"
+    "quote quote quote quote"
+    "edu edu edu skills"
+    
+}
+
+#main-title {
+    grid-area: main-title;
+}
+
+#profile-photo {
+    width: 20vw;
+    height: auto;
+    max-height: 300px;
+}
+
+#about {
+    grid-area: about;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.resume {
+    background-color: #AFD2E9;
+    padding: 40px;
+}
+
+#quote {
+    background-color:#F7567C;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    grid-area: quote;
+    border-radius: 10px;
+}
+
+#Edu {
+    background-color:#FFEE93;
+    padding: 20px 70px 20px 20px;
+    grid-area: edu;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+    grid-template-rows: auto; 
+    grid-template-areas:
+    "edu-title edu-title  edu-title edu-title edu-title edu-title"
+    "edu1 edu1 edu2 edu2 edu3 edu3"
+    "edu4 edu4 edu4 edu5 edu5 edu5"
+}
+
+#edu-title {
+    grid-area: edu-title;
+}
+
+.edu-edu1 {
+    border-radius: 20px;
+    background-color:#AFD2E9;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.edu-edu2 {
+    border-radius: 20px;
+    background-color: #F7567C;
+    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.edu-description {
+    padding-left: 20px;
+}
+
+#edu1 {
+    grid-area: edu1;
+}
+
+#edu2 {
+    grid-area:edu2;
+}
+
+#edu3 {
+    grid-area: edu3;
+}
+
+#edu4 {
+    grid-area: edu4;
+}
+
+#edu5 {
+    grid-area: edu5;
+}
+
+#skills {
+    grid-area: skills;
+    background-color:	#D0D0D0;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    max-height: 100px;
+}
+
+#education {
+    grid-area: education;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+
+footer {
+    background-color: #3e3e3e;
+    color: lightgray;
+    padding: 10px 11%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.social-icon {
+    max-width: 40px;
+    max-height: 40px;
+    padding: 5px;
+}
